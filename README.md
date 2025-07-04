@@ -234,9 +234,3 @@ Used as the main input for PyGame GUI.
 * Webcam integration for live puzzle detection
 * Mobile-friendly port with Kivy
 
----
-
-## 👨‍💼 Authors
-
-* **Swaroop P** — Design, architecture, GUI, and core engineering
-* **OpenAI ChatGPT** — Assistant developer & documentation helper
