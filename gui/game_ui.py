@@ -31,7 +31,7 @@ BUTTON_TEXT = (255, 255, 255)
 RED = (200, 50, 50)
 GREEN = (50, 200, 50)
 
-algorithm_options = ["backtracking", "dlx"]
+algorithm_options = ["backtracking", "backtracking2", "dlx"]
 current_algorithm = "backtracking"
 start_time = time.time()
 algorithm_dropdown_visible = False

@@ -16,18 +16,20 @@ def solve(puzzle):
                     return False
         return True
 
-    def backtrack():
+    def backtrack_with_valid_numbers():
+        all_num = list(range(1,10))
         for row in range(9):
             for col in range(9):
                 if board[row][col] == 0:
-                    for num in range(1, 10):
+                    req_list = list(filter(lambda x: x not in board[row], all_num))
+                    for num in req_list:
                         if is_valid(board, row, col, num):
                             board[row][col] = num
-                            if backtrack():
+                            if backtrack_with_valid_numbers():
                                 return True
                             board[row][col] = 0
                     return False
         return True
 
-    backtrack()
+    backtrack_with_valid_numbers()
     return board
